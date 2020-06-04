@@ -1,13 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromotionEngine.Models;
 using System.Collections.Generic;
+using PromotionEngine.Services;
 
 namespace PromotionEngine.UnitTest
 {
   [TestClass]
   public class PromoEngineServiceTest
   {
-    PromoEngineService promoEngineService = new PromoEngineService();
+    IPromoEngineService promoEngineService = new PromoEngineService();
     /// <summary>
     /// 
     /// </summary>
