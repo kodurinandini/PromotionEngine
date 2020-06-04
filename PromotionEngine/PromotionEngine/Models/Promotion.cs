@@ -7,10 +7,11 @@ namespace PromotionEngine.Models
 {
   public class Promotion
   {
-    public string PromotionId { get; set; }
+    public int PromotionId { get; set; }
     public bool IsActive { get; set; }
     public List<Item> ItemsInPromo { get; set; }
-    public char Operator { get; set; }
+    public int QuantityForPromo { get; set; }
     public decimal PromoPrice { get; set; }
+
   }
 }

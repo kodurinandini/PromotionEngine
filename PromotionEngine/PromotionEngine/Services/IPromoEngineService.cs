@@ -12,6 +12,6 @@ namespace PromotionEngine.Services
     List<CartItem> GetItemsInCart();
     bool InsertItemInCart(string ItemName, int quantity);
     List<Promotion> GetPromotions();
-    List<CartItem> GetFinalBillWithPromoApplied();
+    decimal GetFinalBillWithPromoApplied(List<CartItem> cartItems, List<Promotion> promotions);
   }
 }
